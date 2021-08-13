@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="/Images/You win.mp4" type="video/mp4" />
+    </video>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Qahiri&family=Tourney:wght@200&display=swap");
+    @import url("https://drive.google.com/uc?id=1XbQOWcJOlLQHQhdw13nXnQ9UmgNn18z_");
+
+    * {
+      padding: 0;
+      box-sizing: inherit;
+
+      margin: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Press Start 2P";
+      font-weight: normal;
+      font-style: normal;
+      color: white;
+      background-color: rgb(29, 29, 29);
+    }
+
+    header {
+      position: relative;
+      height: 30vh;
+      border-bottom: 7px solid white;
+    }
+
+    main {
+      height: 65vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .left {
+      width: 52rem;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      align-items: center;
+    }
+
+    .right {
+      width: 60rem;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      right: 5rem;
+      text-align: right;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes example {
+      0% {
+        background-color: red;
+        left: 460px;
+        top: 265px;
+      }
+      15% {
+        background-color: green;
+        left: 460px;
+        top: 165px;
+      }
+      30% {
+        background-color: cyan;
+        left: 460px;
+        top: 365px;
+      }
+      45% {
+        background-color: blueviolet;
+        left: 460px;
+        top: 265px;
+      }
+      60% {
+        background-color: lightgreen;
+        left: 560px;
+        top: 265px;
+      }
+      80% {
+        background-color: black;
+        left: 360px;
+        top: 265px;
+      }
+    }
+
+    .number {
+      background: white;
+      color: rgb(41, 43, 43);
+      font-size: 6rem;
+      width: 20rem;
+      padding: 3rem 0rem;
+      border-radius: 2cm;
+      text-align: center;
+      position: relative;
+      top: 265px;
+      left: 460px;
+      transform: translate(-50%, -50%);
+    }
+
+    .number {
+      position: relative;
+      top: 220px;
+
+      animation-name: none;
+      animation-duration: 1s;
+    }
+
+    .guess {
+      font-size: 1.4rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    .again {
+      position: absolute;
+      top: 2rem;
+      left: 4rem;
+    }
+
+    .submit {
+      background-color: green;
+      border: 4px solid white;
+      font-family: inherit;
+      font-size: 4rem;
+      padding: 2.5rem;
+      width: 25rem;
+      text-align: center;
+      display: block;
+      margin-bottom: 3rem;
+      border-radius: 2cm;
+    }
+    .submit:hover {
+      background-color: white;
+    }
+
+    .submit:active {
+      background-color: teal;
+    }
+
+    .btn {
+      border: none;
+      background-color: green;
+      color: black;
+      font-family: inherit;
+      padding: 2rem 3rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: white;
+    }
+
+    .btn:active {
+      background-color: teal;
+    }
+
+    .message {
+      margin-bottom: 3rem;
+      height: 3rem;
+    }
+
+    .Lscore {
+      margin-bottom: 2rem;
+    }
+
+    .Name {
+      position: absolute;
+      bottom: 5rem;
+      color: black;
+      background-color: bisque;
+      padding: 20px;
+      border-radius: 2cm;
+      align-items: center;
+      width: 10cm;
+      text-align: center;
+    }
+
+    .in {
+      width: 25rem;
+      padding: 100 rem;
+      margin: 20px;
+      height: 8rem;
+      text-align: center;
+      font-family: inherit;
+      border-radius: 2cm;
+      background-color: rgb(29, 29, 29);
+      border-width: 5px;
+      color: white;
+      font-size: 2rem;
+    }
+
+    .again {
+      border-radius: 2cm;
+    }
+
+    video {
+      position: absolute;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: 850px) {
+      .number {
+        left: 290px;
+        width: 80px;
+        top: 200px;
+        height: 70px;
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 15px;
+        top: 140px;
+        left: 190px;
+      }
+
+      header {
+        position: relative;
+        height: 30vh;
+        left: 0px;
+        top: -50px;
+        width: 100%;
+        border-bottom: 7px solid white;
+      }
+
+      .again {
+        top: 70px;
+        width: 100px;
+        font-size: 10px;
+
+        height: 10px;
+
+        left: 10px;
+      }
+
+      .guess {
+        top: 85px;
+        font-size: 10px;
+      }
+
+      .in {
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+        position: relative;
+        top: -130px;
+        left: -20px;
+      }
+
+      .submit {
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+        position: relative;
+        top: -143px;
+        left: -20px;
+      }
+
+      .message {
+        font-size: 14px;
+        left: -50px;
+        top: -130px;
+        position: relative;
+      }
+
+      .Lscore {
+        font-size: 12px;
+        position: relative;
+        left: -40px;
+        top: -110px;
+      }
+
+      .lhscore {
+        font-size: 12px;
+        position: relative;
+        left: -40px;
+        top: -110px;
+      }
+
+      .Name {
+        width: 20rem;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>Guess the number ?</h1>
+      <p class="guess">Guess 1 to 20</p>
+      <button class="btn again">again</button>
+      <div class="number">?</div>
+    </header>
+
+    <main>
+      <section class="left">
+        <input class="in" type="number" placeholder="Enter No" />
+        <button class="btn submit">Guess</button>
+      </section>
+      <section class="right">
+        <p class="message">Guess the number?</p>
+        <p class="Lscore">💯Your Score: <span class="score">20</span></p>
+        <p class="lhscore">⚡High Score: <span class="hscore">0</span></p>
+      </section>
+
+      <p class="Name">Game by Yash</p>
+    </main>
+    <script>
+      "use strict";
+
+      let secretnumber;
+      let score;
+
+      function secret() {
+        secretnumber = Math.random() * 20 + 1;
+        secretnumber = Math.trunc(secretnumber);
+        console.log(secretnumber);
+        score = 20;
+        console.log(score);
+      }
+
+      secret();
+
+      document.querySelector(".again").addEventListener("click", function () {
+        secret();
+        document.querySelector(".number").textContent = "?";
+
+        document.querySelector(".score").textContent = score;
+        document.querySelector(".message").textContent =
+          "❓ Guess the number ! ";
+        document.querySelector("video").style.visibility = "hidden";
+        document.querySelector(".number").style.animationName = "none";
+      });
+
+      document.querySelector(".submit").addEventListener("click", function () {
+        let guessednumber = Number(document.querySelector(".in").value);
+        console.log(typeof guessednumber, guessednumber);
+
+        let hscore = document.querySelector(".hscore").textContent;
+
+        if (!guessednumber) {
+          document.querySelector(".message").textContent =
+            "⛔Please Enter Number";
+        } else if (secretnumber === guessednumber) {
+          document.querySelector(".message").textContent = "🏆You win";
+        } else if (score > 0) {
+          if (guessednumber > secretnumber) {
+            document.querySelector(".message").textContent = "📈 Too high";
+            score--;
+            document.querySelector(".score").textContent = score;
+            console.log("score" + score);
+          } else if (guessednumber < secretnumber) {
+            document.querySelector(".message").textContent = "📉 Too Low";
+            score--;
+            document.querySelector(".score").textContent = score;
+          }
+        }
+        if (score === 0) {
+          document.querySelector(".message").textContent = "😢 You lose";
+        }
+
+        if (document.querySelector(".message").textContent === "🏆You win") {
+          let higscore = Number(document.querySelector(".hscore").textContent);
+          console.log(higscore, typeof higscore);
+          document.querySelector("video").style.visibility = "visible";
+          console.log(document.querySelector("video").style);
+          document.querySelector(".number").textContent = secretnumber;
+          document.querySelector(".number").style.animationName = "example";
+
+          if (higscore < score) {
+            document.querySelector(".hscore").textContent = score;
+            console.log(document.querySelector(".hscore").textContent);
+          }
+
+          console.log(score);
+        }
+      });
+    </script>
+  </body>
+</html>

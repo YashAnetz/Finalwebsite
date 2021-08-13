@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+    body
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    
+    }
+    
+    h1
+    {
+        position: absolute;
+        background-color: white;
+        border-radius: 2cm;
+        padding: 10px;
+        z-index: 1;
+        top: 70px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+    }
+    main
+    {
+        
+    
+        background-color: grey;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        top: 4px;
+        left: -0px;
+        padding: 150px;
+        border-radius: 1cm;
+        z-index: 0;
+        font-weight: 100;
+        background: rgba(172, 172, 167, 0.8);
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+       
+    
+        
+        
+     
+    }
+    
+    img{
+        position: absolute;
+        width: 100%;
+        height: 170%;
+    
+    }
+    
+    input{
+        padding: 9px;
+        border-radius: 0.5cm;
+        margin: 10px;
+    }
+    
+    
+    button{
+        padding: 10px;
+        border-radius: 1cm;
+        align-items: center;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        z-index: 2s;
+        top: -180px;
+        width: 100px;
+        left: -60px;
+        
+    }
+    
+    
+    .quant
+    {
+        left: 110px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -180px;
+    }
+    
+    .verbal
+    {
+        left: -110px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -16px;
+     
+    }
+    
+    
+    
+    button:hover
+    {
+       background-color: black;
+       color: white;
+    }
+    
+    .result
+    {
+        position: absolute;
+        background-color: white;
+        border-radius: 1cm;
+        padding: 10px;
+        z-index: 2;
+        top: 27rem;
+        left: 15srem;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+        padding: 100px;
+        width: 250px;
+        text-align: center;
+      
+      transition-delay: 1s;
+    
+    }
+    
+    .exit{
+        padding: 10px;
+        border-radius: 1cm;
+        align-items: center;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        z-index: 2s;
+        top: -140px;
+        width: 100px;
+        left: 160px;
+        
+    }
+    
+    .hide
+    {
+        display: none;
+    }
+
+    [class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+    
+    </style>
+    <img src="Images/grebac.jpeg">
+</head>
+<body>
+    <h1> GRE SCORE CALCULATOR </h1>
+   
+    <main>
+
+    <div class="verbal">
+        <p> Verbal 1 Score </p>
+        <input class='v1' type="text" placeholder="Verbal 1 score (total 20)">
+        <p> Verbal 2 Score </p>
+        <input class='v2' type="text" placeholder="Verbal 1 score (total 20)">
+
+    </div>
+
+    <div class="quant">
+        <p> Quant 1 Score </p>
+        <input class='q1' type="text" placeholder="Quant 1 score (total 20)">
+        <p> Quant 2 Score </p>
+        <input class='q2' type="text" placeholder="Quant 2 score (total 20)">
+
+    </div>
+
+    
+    <button class="exit ">Reset</button>
+    <button class="Calculate">Calculate</button>
+</main>
+
+<div class="result hide">
+<h2>result</h2>
+
+
+</div>
+<script>
+
+    let verbal1 = document.querySelector(".v1")
+    let verbal2 = document.querySelector(".v2")
+    let quant1 = document.querySelector(".q1")
+    let quant2 = document.querySelector(".q2")
+    let submit = document.querySelector(".Calculate")
+    let result = document.querySelector(".result")
+    let reset = document.querySelector(".exit")
+    let verbal1score =  0
+        let verbal2score = 0
+        let quant1score =0
+        let quant2score = 0
+        let verbalfinal;
+        let quantfinal;
+        let grefinal;
+        let grezero = 260;
+    
+        let noinput;
+        let greater20;
+    
+    submit.addEventListener('click', function(){
+    
+       verbal1score = Number(verbal1.value);
+         verbal2score = Number(verbal2.value);
+         quant1score = Number(quant1.value);
+        quant2score = Number(quant2.value);
+    
+        console.log(`Scores :
+        verbal 1 : ${verbal1score}
+        verbal 2 : ${verbal2score}
+        quant 1 : ${quant1score}
+        quant 2 : ${quant2score}`);
+    
+        if(verbal1score==0 || verbal2score==0 || quant2score==0 || quant1score==0)
+        {
+    
+            noinput = "Kindly enter all marks ";
+            console.log("No input");
+            result.classList.remove("hide")
+           
+            result.textContent=`Kindly enter all Marks` ;
+        }
+    
+        else if(verbal1score>20 || verbal2score>20 || quant2score>20 || quant1score>20)
+    
+        {
+    
+            greater20 = "Kindly enter marks out of 20"
+            console.log("Invalid");
+            result.classList.remove("hide")
+           
+            result.textContent=`Kindly enter marks out of 20` ;
+        }
+       
+        else if(verbal1score<20 || verbal2score<20 || quant2score<20 || quant1score<20)
+        {
+            verbalfinal=verbal1score+verbal2score;
+            quantfinal=quant2score+quant1score;
+            grefinal=verbalfinal+quantfinal+grezero;
+            console.log(grefinal);
+            result.classList.remove("hide")
+           
+            result.textContent=`💯Your gre score is ${grefinal}/340
+            Verbal : ${verbalfinal+130}
+            Quant : ${quantfinal+130}` ;
+        }
+    
+    
+    
+    
+    
+    
+    })
+    
+    
+    reset.addEventListener('click', function(){
+    
+
+       verbal1.value=""
+       verbal2.value=""
+      quant1.value=""
+       quant2.value=""
+        result.classList.add("hide")
+    
+    
+    })</script>
+</body>
+
+</html>

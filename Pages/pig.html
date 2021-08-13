@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Style/stylepig.css" />
+
+    <video autoplay loop>
+      <source
+        src="https://drive.google.com/uc?id=13R5Acx1AgLhiBvF_Dqi3377WAinZACQ_"
+        type="video/mp4"
+      />
+    </video>
+
+    <video class="hide" id="myvideo" preload="auto" autoplay="true" loop="loop">
+      <source
+        src="https://drive.google.com/uc?id=1_DuDCSSTyZ9ouZhFrQ67RsrZKyaqATQZ"
+        type="video/mp4"
+      />
+      Sorry, your browser does not support HTML5 video.
+    </video>
+  </head>
+  <body>
+    <section class="responsive">
+      <main>
+        <div class="overlay hide"></div>
+        <section class="player player--1 player--active">
+          <h2 class="name" id="name--0">PLAYER 1️⃣</h2>
+          <h2 class="score" id="score--1">43</h2>
+
+          <div class="current">
+            <h3 class="current-label">CURRENT</h3>
+            <h3 class="current-score" id="current--1">0</h3>
+          </div>
+        </section>
+
+        <section class="player player--2">
+          <h2 class="name" id="name--1">PLAYER 2️⃣</h2>
+          <h2 class="score" id="score--2">43</h2>
+
+          <div class="current">
+            <h3 class="current-label">CURRENT</h3>
+            <h3 class="current-score" id="current--2">0</h3>
+          </div>
+        </section>
+
+        <img src="/Images/dice-1.png" class="dice" />
+
+        <button class="btn newgame">🆕New</button>
+        <button class="btn hold">🤚Hold</button>
+        <button class="btn roll">🎲Roll</button>
+
+        <div class="winner">
+          <section class="winner1 hide">
+            <button class="exit">X</button>Player 1 wins 🏆
+          </section>
+          <section class="winner2 hide">
+            <button class="exit2">X</button> Player 2 wins 🏆
+          </section>
+        </div>
+      </main>
+    </section>
+
+    <button class="btn1 play">🎵</button>
+    <button class="btn1 back">
+      <a href="https://netzyash.blogspot.com/">🔙</a>
+    </button>
+    <a href="https://github.com/YashAnetz/GuessMyNumber"
+      ><button class="btn1 yash">👩‍💻Yash/git</button></a
+    >
+
+    <script src="/Script/pigjs.js"></script>
+  </body>
+</html>

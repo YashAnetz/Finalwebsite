@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/Style/stylemole.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img class="mol" src="/Images/mole.png" />
+      <h1>Whack a Mole</h1>
+    </header>
+
+    <section class="screen">
+      <div class="status">
+        <span class="score">0</span>
+        <span class="time">0</span>
+        <button class="restart">STOP</button>
+      </div>
+
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+      <div class="box"><img src="/Images/mole.png" /></div>
+    </section>
+    <div class="back"></div>
+
+    <section class="modal">
+      <div>
+        <p>Whack the mole</p>
+        <h5>Select Speed</h5>
+        <button class="slow button2">Slow</button>
+        <button class="Medium button2">Medium</button>
+        <button class="fast button2">Fast</button>
+        <h5>Select time</h5>
+        <button class="t button1">30 sec</button>
+        <button class="s button1">60 sec</button>
+        <button class="h button1">90 sec</button>
+        <button class="reset">RESET</button>
+        <span class="play hide">Play </span>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/d5ac65ff9c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <footer>
+      <div class="content">⭐ BY YASH</div>
+      <div class="footer">
+        <a href="/Index.html"
+          ><div class="social">
+            <i class="fas fa-home"></i></div
+        ></a>
+        <a href="/Pages/100pro.html"><div class="social">ALL-JS</div></a>
+        <a href="https://github.com/YashAnetz"
+          ><div class="social">
+            <i class="fas fa-code"></i></div
+        ></a>
+      </div>
+    </footer>
+
+    <style>
+      .content {
+        padding: 0px;
+        font: 300 20px Lato, sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: auto;
+      }
+
+      .social {
+        display: inline-block;
+
+        font-family: Entypo;
+
+        color: #bbb;
+        border-radius: 10px;
+        background: #eee;
+
+        transition: color 0.3s;
+      }
+
+      .social:hover {
+        color: #59d;
+        background-color: gray;
+        cursor: pointer;
+      }
+
+      .social {
+        width: 80px;
+        height: 30px;
+        padding: 5px;
+        font-size: 20px;
+        margin: 10px;
+        align-items: center;
+        color: rgb(145, 139, 139);
+        background-color: rgb(90, 90, 90);
+        text-align: center;
+        box-shadow: 1px 3px 4px 1px #000000;
+      }
+    </style>
+    <script src="/Script/scriptmole.js"></script>
+  </body>
+</html>
