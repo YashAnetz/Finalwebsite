@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+html
+{
+    font-family: 'Teko', sans-serif;
+   
+}
+
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.main
+{
+    color: white;
+    margin: auto;
+    width: 26rem;
+    
+    background-color: rgba(5, 2, 2, 0.726);
+    padding: 10px;
+    top: 50px;
+    left:-5px;
+    border-radius: 1cm;
+    position: relative;
+
+}
+
+img{
+    width: 20rem;
+    border:1px;
+    margin: 25px;
+ position: relative;
+    left: 10px;
+    background-color: darkcyan;
+    border-radius: 1cm;
+ 
+
+}
+
+video
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+}
+
+h1
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;;
+    width: 20rem;
+    border:1px;
+    margin: 25px;
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    
+ 
+    color: black;
+    left: -5px;
+    border-radius: 1cm;
+  
+   
+ 
+}
+
+input{
+    width: 10rem; 
+    height: 2.95em; 
+   background: none;
+   color: white;
+   border: black;
+   border: 3px solid black;
+   padding: 3px;
+   font-size: 1rem;
+   border-radius: 1cm;
+   margin: 10px;
+   text-align: center;
+}
+
+h3{
+  
+    position: relative;
+    text-align: center;
+    font-size: 145x;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1cm;
+    padding: 5px;
+}
+
+h2
+{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+button
+{
+    width: 5rem; 
+   height: 2.95em; 
+   border-radius: 1cm;
+   top:-2px;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   font-family: 'Roboto Mono', monospace;
+}
+
+h4
+{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1cm;
+    padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+ 
+    body{
+        background-color: black;
+    }
+  }
+
+  a{
+      position: relative;
+      left: 180px;
+  }
+
+
+  button:hover
+  {
+     background: white;
+     color: black;
+  }

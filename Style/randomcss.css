@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: sans-serif;
+  background: #ededed;
+  transition: all 0.1s linear;
+}
+
+h1 {
+  align-items: center;
+  font-family: monospace;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+/* FOR RGB */
+.rgb {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+
+  place-items: center;
+}
+.rgbselector {
+  width: 90%;
+  max-width: 500px;
+  padding: 4rem;
+  text-align: center;
+
+  border-radius: 1rem;
+
+  background: rgba(148, 143, 143, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.rgbselector * {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.rgb-btn:hover {
+  background: none;
+  border: 1px dotted;
+}
+
+/* FOR HEX */
+
+.hex {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+
+  place-items: center;
+}
+.hexselector {
+  width: 90%;
+  max-width: 500px;
+  padding: 4rem;
+  text-align: center;
+
+  border-radius: 1rem;
+
+  background: rgba(148, 143, 143, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hexselector * {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.hex-btn:hover {
+  background: none;
+  border: 1px dotted;
+}
+
+/* FOR GRADIENT
+   background-image: linear-gradient(to bottom right,rgb(114,167,192) , rgb(134,152,163));*/
+
+.grad {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+
+  place-items: center;
+}
+.gradselector {
+  width: 90%;
+  max-width: 500px;
+  padding: 4rem;
+  text-align: center;
+
+  border-radius: 1rem;
+
+  background: rgba(148, 143, 143, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gradselector * {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.grad-btn:hover {
+  background: none;
+  border: 1px dotted;
+}
+
+.c1 {
+  background-color: black;
+}
+
+.c2 {
+  background-color: black;
+}
+
+.c3 {
+  background-color: black;
+}
+
+.c4 {
+  background-color: black;
+}
+
+.c5 {
+  background-color: black;
+}
+
+/* 
+         .btn-grad {background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here 
+            color: #fff;
+            text-decoration: none; 
+      */
+
+.hov {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+  display: grid;
+
+  place-items: center;
+}
+.hovselector {
+  width: 90%;
+  max-width: 500px;
+  padding: 4rem;
+  text-align: center;
+
+  border-radius: 1rem;
+
+  background: rgba(148, 143, 143, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hovselector * {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.hov-btn:hover {
+  background: none;
+  border: 1px dotted;
+}
+
+.hover {
+  background-image: linear-gradient(
+    to right,
+    #2b5876 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+}
+.hover {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  width: 200px;
+  height: 50px;
+  background-size: 200% auto;
+  color: white;
+
+  border-radius: 10px;
+}
+
+.hover:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
