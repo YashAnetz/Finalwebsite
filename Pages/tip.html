@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip cal</title>
+    <link href="/Style/styletip.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h2 class="h2">Tip Calculator</h2>
+
+      <div class="tip">
+        <label for="bill">Enter bill: </label>
+        <label class="dollar" for="bill">₹</label>
+
+        <input class="bill" type="number" placeholder="Enter bill" />
+
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          class="slider tipper"
+          id="tiprange"
+        />
+        <label class="tipname" for="tipper">TIP</label>
+        <label class="tipamt" for="tipper">0%</label>
+        <div class="line"></div>
+        <div class="Total">
+          <h3 class="tipname1">TIP</h3>
+          <h3 class="tipvalue">Rs.0</h3>
+          <div class="line2"></div>
+          <h2 class="totalname">TOTAL</h2>
+          <h2 class="totalvalue">Rs.0</h2>
+        </div>
+      </div>
+
+      <div class="divide">
+        <label for="bill">Enter No of people </label>
+
+        <input
+          type="range"
+          min="1"
+          max="20"
+          value="0"
+          class="slider people"
+          id="tiprange"
+        />
+        <label class="tipname" for="tipper">TIP</label>
+        <label class="peoplename" for="tipper">1 Person </label>
+        <label class="person" for="tipper">🕴</label>
+
+        <div class="line"></div>
+        <div class="Total">
+          <h2 class="dividename">TOTAL</h2>
+          <h2 class="dividevalue">Rs.0</h2>
+        </div>
+      </div>
+      <h2 class="emoji">hi</h2>
+      <script
+        src="https://kit.fontawesome.com/d5ac65ff9c.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <footer>
+        <div class="content">⭐ BY YASH</div>
+        <div class="footer">
+          <a href="/Index.html"
+            ><div class="social">
+              <i class="fas fa-home"></i></div
+          ></a>
+          <a href="/Pages/100pro.html"><div class="social">ALL-JS</div></a>
+          <a href="https://github.com/YashAnetz"
+            ><div class="social">
+              <i class="fas fa-code"></i></div
+          ></a>
+        </div>
+      </footer>
+
+      <style>
+        .content {
+          padding: 0px;
+          font: 300 20px Lato, sans-serif;
+          text-align: center;
+          position: relative;
+          border-radius: 20px;
+          top: 30px;
+          color: rgb(255, 255, 255);
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+          margin: 10px;
+          top: 30px;
+
+          position: relative;
+          text-align: center;
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.3);
+          width: auto;
+        }
+
+        .social {
+          display: inline-block;
+
+          font-family: Entypo;
+
+          color: #bbb;
+          border-radius: 10px;
+          background: #eee;
+
+          transition: color 0.3s;
+        }
+
+        .social:hover {
+          color: #59d;
+          background-color: gray;
+          cursor: pointer;
+        }
+
+        .social {
+          width: 80px;
+          height: 30px;
+          padding: 5px;
+          font-size: 20px;
+          margin: 10px;
+          align-items: center;
+          color: rgb(145, 139, 139);
+          background-color: rgb(90, 90, 90);
+          text-align: center;
+          box-shadow: 1px 3px 4px 1px #000000;
+        }
+      </style>
+    </main>
+
+    <script src="/Script/tipscript.js"></script>
+  </body>
+</html>
