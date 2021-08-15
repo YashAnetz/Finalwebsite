@@ -59,7 +59,7 @@ submit.addEventListener("click", function () {
   }
 
   if (input.value == "" || input.value == "0") {
-    image.src = "Images/no.jpg";
+    image.src = "/Images/no.jpg";
     output.textContent = `This is how 0 people will look`;
   } else {
     image.src = `/Images/${number}.jpg`;
@@ -68,7 +68,7 @@ submit.addEventListener("click", function () {
 });
 
 reset.addEventListener("click", function () {
-  image.src = "people.png";
+  image.src = "/Images/people.png";
   output.textContent = "Try 1 million , 5 million ,100 million , 1 billion";
   input.value = "";
 });
