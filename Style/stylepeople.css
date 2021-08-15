@@ -1,156 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
 
-*
-{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
-html
-{
-    font-family: 'Teko', sans-serif;
-   
+html {
+  font-family: "Teko", sans-serif;
 }
 
-
-body
-{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #505285 0%,
+    #585e92 12%,
+    #65689f 25%,
+    #7474b0 37%,
+    #7e7ebb 50%,
+    #8389c7 62%,
+    #9795d4 75%,
+    #a2a1dc 87%,
+    #b5aee4 100%
+  );
 }
 
-.main
-{
+.main {
+  color: white;
+  margin: auto;
+  box-shadow: 3px 2px 7px 1px #505285;
+  width: 26rem;
+
+  background-image: linear-gradient(
+    to top,
+    #505285 0%,
+    #585e92 12%,
+    #585e92 25%,
+    #585e92 37%,
+    #585e92 50%,
+    #585e92 62%,
+    #585e92 75%,
+    #585e92 87%,
+    #585e92 100%
+  );
+  padding: 10px;
+  top: 10px;
+  height: 40rem;
+  left: -5px;
+
+  position: relative;
+}
+
+img {
+  width: 20rem;
+  border: 1px;
+  margin: 25px;
+  position: relative;
+  left: 10px;
+  background-color: darkcyan;
+  border-radius: 1cm;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  width: 20rem;
+  border: 1px;
+  margin: 25px;
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+
+  color: black;
+  left: -5px;
+  border-radius: 1cm;
+}
+
+input {
+  width: 10rem;
+  height: 2.95em;
+  background: none;
+  color: white;
+  border: black;
+  border: 3px solid black;
+  padding: 3px;
+  font-size: 1rem;
+  border-radius: 1cm;
+  margin: 10px;
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  font-size: 145x;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1cm;
+  padding: 5px;
+}
+
+h2 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+button {
+  width: 5rem;
+  height: 2.95em;
+  border-radius: 1cm;
+  top: -2px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+h4 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1cm;
+  padding: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background-color: black;
+    height: 100vh;
+  }
+  .main {
     color: white;
     margin: auto;
+    box-shadow: 3px 2px 7px 1px #505285;
     width: 26rem;
-    
-    background-color: rgba(5, 2, 2, 0.726);
+
+    background-image: linear-gradient(
+      to top,
+      #505285 0%,
+      #585e92 12%,
+      #585e92 25%,
+      #585e92 37%,
+      #585e92 50%,
+      #585e92 62%,
+      #585e92 75%,
+      #585e92 87%,
+      #585e92 100%
+    );
     padding: 10px;
     top: 50px;
-    left:-5px;
-    border-radius: 1cm;
-    position: relative;
-
-}
-
-img{
-    width: 20rem;
-    border:1px;
-    margin: 25px;
- position: relative;
-    left: 10px;
-    background-color: darkcyan;
-    border-radius: 1cm;
- 
-
-}
-
-video
-{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    
-}
-
-h1
-{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;;
-    width: 20rem;
-    border:1px;
-    margin: 25px;
-    position: relative;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 15px;
-    
- 
-    color: black;
+    height: 40rem;
     left: -5px;
-    border-radius: 1cm;
-  
-   
- 
-}
 
-input{
-    width: 10rem; 
-    height: 2.95em; 
-   background: none;
-   color: white;
-   border: black;
-   border: 3px solid black;
-   padding: 3px;
-   font-size: 1rem;
-   border-radius: 1cm;
-   margin: 10px;
-   text-align: center;
-}
-
-h3{
-  
     position: relative;
-    text-align: center;
-    font-size: 145x;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 1cm;
-    padding: 5px;
-}
-
-h2
-{
-    position: relative;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-}
-
-button
-{
-    width: 5rem; 
-   height: 2.95em; 
-   border-radius: 1cm;
-   top:-2px;
-   position: relative;
-   background-color: rgba(0, 0, 0, 0.5);
-   color: white;
-   font-family: 'Roboto Mono', monospace;
-}
-
-h4
-{
-    position: relative;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 1cm;
-    padding: 5px;
-}
-
-@media screen and (max-width: 800px) {
- 
-    body{
-        background-color: black;
-    }
   }
+}
 
-  a{
-      position: relative;
-      left: 180px;
-  }
+a {
+  position: relative;
+  left: 180px;
+}
 
-
-  button:hover
-  {
-     background: white;
-     color: black;
-  }
+button:hover {
+  background: white;
+  color: black;
+}
