@@ -1,0 +1,812 @@
+* {
+  margin: 0;
+  transition: 0.5s;
+
+  padding: 0;
+}
+
+body,
+html {
+  background-color: rgb(222, 226, 240);
+  height: 100%;
+
+  width: 100%;
+}
+.rich {
+  position: relative;
+  text-align: center;
+}
+
+.status {
+  border-top-left-radius: 20px;
+  width: 24rem;
+  height: 8rem;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 500px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  position: absolute;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.statusimg {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+}
+.login {
+  border-top-left-radius: 20px;
+  width: 20rem;
+  height: 20rem;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  position: absolute;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.shopping {
+  border-top-left-radius: 20px;
+  width: 20rem;
+  height: 20rem;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  position: absolute;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+.login h2 {
+  position: relative;
+  left: 0px;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  border-top-left-radius: 20px;
+  height: 40px;
+  font-family: serif;
+  padding-top: 10px;
+  background-color: #060720;
+}
+
+.details {
+  position: absolute;
+  left: 4rem;
+  top: 6rem;
+
+  padding: 10px;
+}
+
+.username {
+  padding: 5px;
+  margin: 5px;
+}
+
+.password {
+  padding: 5px;
+  margin: 5px;
+}
+
+.details label {
+  font-size: 17px;
+  left: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.logbutton {
+  width: 10.7rem;
+  margin: 10px;
+  position: relative;
+  left: -6px;
+
+  height: 30px;
+  border-radius: 20px;
+  background: none;
+  border: 1px black dotted;
+}
+
+.logbutton:hover {
+  background-color: white;
+}
+
+.logo {
+  border-top-left-radius: 20px;
+  width: 20rem;
+  height: 2rem;
+  background-color: rgb(252, 252, 162);
+
+  top: -600px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  position: absolute;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.imglogo {
+  width: 40px;
+  border-top-left-radius: 20px;
+  box-shadow: 1px 1px 10px 1px black;
+  background-color: chocolate;
+}
+
+.bank {
+  position: relative;
+  top: -40px;
+  left: 50px;
+  color: #3a3a3a;
+}
+
+.hide {
+  display: none;
+}
+
+.bankmain {
+  border-top-left-radius: 20px;
+  width: 30rem;
+  height: 25rem;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: -7rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  position: absolute;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.bankmain h2 {
+  position: relative;
+  left: 0px;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  border-top-left-radius: 20px;
+  height: 40px;
+  font-family: serif;
+  padding-top: 10px;
+  background-color: #060720;
+}
+
+.bankmain h3 {
+  position: relative;
+  left: 12rem;
+  margin: 10px;
+}
+
+.bankmain h1 {
+  position: relative;
+  left: 6rem;
+  margin: 10px;
+  color: #060720;
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.bankmain label {
+  position: relative;
+  float: left;
+  left: 40px;
+  margin: 10px;
+}
+
+.bankmain input {
+  position: relative;
+  top: 30px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px black;
+  padding: 10px;
+  left: -150px;
+}
+
+.wid button {
+  position: relative;
+  top: 30px;
+  border-radius: 20px;
+
+  left: -180px;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px black;
+  padding: 3px;
+  width: 20px;
+  text-align: center;
+}
+
+.wid {
+  background-color: #11133d;
+  height: 100px;
+}
+
+.transac h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  left: 0px;
+  height: 100px;
+}
+
+.logout {
+  position: relative;
+  top: -25.6rem;
+  box-shadow: 1px 1px 10px 1px black;
+  width: 50px;
+  padding: 8px;
+  left: -140px;
+  border-top-left-radius: 20px;
+}
+
+.add {
+  position: relative;
+  top: -14rem;
+  box-shadow: 1px 1px 10px 1px black;
+  width: 150px;
+  height: 70px;
+  padding: 8px;
+  border-radius: 10px;
+  left: 310px;
+}
+
+img {
+  width: 40px;
+  position: relative;
+}
+
+.error {
+  position: relative;
+
+  width: 50%;
+
+  left: 160px;
+  color: rgb(58, 58, 58);
+
+  top: 280px;
+  padding: 30px;
+  z-index: 20;
+}
+
+.errorclose {
+  position: relative;
+  padding: 10px;
+  left: 375px;
+  top: -45px;
+  color: white;
+
+  height: 100px;
+  background: none;
+  border-style: none;
+  border: 1px white dotted;
+}
+
+.errorclose:hover {
+  color: black;
+  background-color: white;
+}
+
+.forgetbutton {
+  width: 7.7rem;
+  z-index: 20;
+  position: relative;
+  left: -50px;
+  color: white;
+  background-color: black;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  border: 1px black dotted;
+}
+
+.signupbutton {
+  width: 7.7rem;
+  z-index: 20;
+  position: relative;
+  left: 30px;
+  color: white;
+  background-color: black;
+  top: 0px;
+  height: 30px;
+  border-radius: 20px;
+
+  border: 1px black dotted;
+}
+
+.signupbutton:hover {
+  color: black;
+  background-color: white;
+}
+.overlay {
+  position: relative;
+  background-color: rgba(122, 118, 118, 0.8);
+  width: 100%;
+  top: 100px;
+  height: 400px;
+  z-index: 10;
+}
+
+.tran {
+  position: relative;
+}
+
+.signup {
+  border-top-left-radius: 20px;
+  width: 20rem;
+  height: 20rem;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: aliceblue;
+  position: absolute;
+  margin: auto;
+  box-shadow: 1px 1px 10px 1px black;
+}
+
+.signup .label1 {
+  position: relative;
+  top: 40px;
+  left: 130px;
+  font-size: px;
+}
+#registerName {
+  position: relative;
+  top: 80px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(56, 59, 233);
+  padding: 5px;
+}
+
+#registerPassword {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgb(50, 226, 59);
+  top: 123px;
+  left: 80px;
+  padding: 5px;
+}
+
+#registerButton {
+  position: relative;
+  left: -20px;
+  padding: 20px;
+  border: 1px black dotted;
+  background: black;
+  color: white;
+
+  top: 13.5rem;
+}
+
+#registerButton:hover {
+  background: white;
+  color: black;
+}
+
+#loginback {
+  position: relative;
+  left: 240px;
+  padding: 20px;
+  border: 1px black dotted;
+  background: none;
+
+  top: 9.9rem;
+}
+
+#loginback:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#loginResult {
+  position: relative;
+  top: 12rem;
+  background-color: black;
+  text-align: center;
+}
+
+.signup .label2 {
+  position: relative;
+  top: 130px;
+  left: -120px;
+}
+
+.spend {
+  position: relative;
+  top: -20rem;
+  box-shadow: 1px 1px 10px 1px black;
+  padding: 10px;
+  width: 40px;
+  left: -140px;
+  border-radius: 50%;
+}
+
+.statusimg {
+  position: relative;
+  width: 50%;
+  height: 85%;
+  margin: 10px;
+}
+
+.statustxt {
+  position: relative;
+  color: rgb(0, 0, 0);
+  left: 210px;
+  top: -125px;
+  width: 130px;
+  background-color: rgba(238, 238, 238, 0.5);
+  padding: 20px;
+  font-size: medium;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .bankmain {
+    border-top-left-radius: 20px;
+
+    background: #4e54c8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #8f94fb,
+      #4e54c8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #8f94fb,
+      #4e54c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    top: 180px;
+    left: 0.5rem;
+    right: 0;
+
+    bottom: 0;
+    width: 400px;
+    margin: 10px;
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 1px 1px 10px 1px black;
+  }
+
+  .logo {
+    border-top-left-radius: 20px;
+    width: 20rem;
+    height: 2rem;
+    background-color: rgb(252, 252, 162);
+
+    top: -500px;
+    left: 50px;
+    right: 0;
+    z-index: 10;
+    bottom: 0;
+    color: aliceblue;
+    position: absolute;
+    margin: auto;
+    box-shadow: 1px 1px 10px 1px black;
+  }
+
+  .login {
+    border-top-left-radius: 20px;
+    width: 20rem;
+    height: 20rem;
+    background: #4e54c8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #8f94fb,
+      #4e54c8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #8f94fb,
+      #4e54c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    top: 200px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    color: aliceblue;
+    position: absolute;
+    margin: auto;
+    box-shadow: 1px 1px 10px 1px black;
+  }
+
+  .signup {
+    position: relative;
+    top: 300px;
+    left: 35px;
+  }
+
+  .overlay {
+    position: relative;
+    background-color: rgba(122, 118, 118, 0.8);
+    width: 107%;
+    text-align: center;
+    margin: 0px;
+    top: 0px;
+    overflow: hidden;
+    left: 0px;
+    height: 107%;
+  }
+
+  .overlay h2 {
+    position: relative;
+    top: 120px;
+    left: -110px;
+    right: 0;
+    bottom: 0px;
+    font-weight: 100;
+
+    width: 100%;
+    height: 100px;
+    padding: 40px;
+
+    border-radius: 20px;
+    background-color: rgb(204, 204, 204);
+    box-shadow: 1px 1px 10px 1px black;
+  }
+
+  .username {
+    position: relative;
+    padding: 5px;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+    width: 100%;
+    left: -40px;
+  }
+
+  .password {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+    left: -40px;
+  }
+
+  .details label {
+    font-size: 17px;
+    left: -30px;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .add {
+    position: relative;
+    left: 290px;
+    width: 100px;
+    top: -230px;
+  }
+
+  .bankmain input {
+    position: relative;
+    top: 30px;
+    width: 70px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px black;
+    padding: 10px;
+    left: -100px;
+  }
+
+  .bankmain label {
+    position: relative;
+    float: left;
+    left: 50px;
+    margin: 10px;
+  }
+
+  .logout {
+    position: relative;
+    left: -90px;
+    top: -415px;
+  }
+
+  #registerButton {
+    position: relative;
+    left: 200px;
+    top: 140px;
+  }
+
+  #loginback {
+    position: relative;
+    left: 30px;
+    top: 140px;
+  }
+
+  #registerName {
+    position: relative;
+    top: 80px;
+    left: 5px;
+    width: 90%;
+    border-bottom-right-radius: 20px;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(56, 59, 233);
+    padding: 10px;
+  }
+
+  #registerPassword {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 226, 59);
+    border-bottom-right-radius: 20px;
+    top: 90px;
+    width: 90%;
+
+    left: 5px;
+    padding: 10px;
+  }
+
+  .label1 {
+    position: relative;
+    left: 100px;
+  }
+
+  .label2 {
+    position: relative;
+    left: 0px;
+  }
+
+  .bankmain h1 {
+    position: relative;
+    left: 60px;
+    width: 250px;
+  }
+
+  .bankmain .bale {
+    position: relative;
+    left: 150px;
+  }
+
+  .transac h4 {
+    position: relative;
+    left: 190px;
+  }
+
+  .status {
+    border-top-left-radius: 20px;
+    width: 25rem;
+    height: 8rem;
+    background: #4e54c8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #8f94fb,
+      #4e54c8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #8f94fb,
+      #4e54c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    top: 660px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    color: aliceblue;
+    position: absolute;
+    margin: auto;
+    box-shadow: 1px 1px 10px 1px black;
+  }
+
+  .statusimg {
+    position: relative;
+    width: 50%;
+    height: 85%;
+    margin: 10px;
+  }
+
+  .statustxt {
+    position: relative;
+    color: rgb(0, 0, 0);
+    left: 220px;
+    top: -125px;
+    width: 130px;
+    background-color: rgba(238, 238, 238, 0.5);
+    padding: 20px;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .spend {
+    position: relative;
+    top: -20.3rem;
+    box-shadow: 1px 1px 10px 1px black;
+    padding: 10px;
+    width: 40px;
+    left: -140px;
+    border-radius: 50%;
+  }
+
+  .bankmain .deposit {
+    position: relative;
+    left: -180px;
+    width: 100px;
+  }
+  .bankmain .withdraw {
+    position: relative;
+    left: -50px;
+    width: 100px;
+    top: -3px;
+  }
+
+  .transac .rich {
+    position: relative;
+    left: 10px;
+    text-align: center;
+  }
+}
