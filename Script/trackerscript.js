@@ -129,7 +129,7 @@ let currday
 
 
  let goal
- goal = totalamt.textContent;
+ goal = Number(totalamt.textContent);
 goaltext.textContent = `Goal - ${goal}/${target}km`
 
 let goalpercent 
@@ -149,38 +149,48 @@ linear-gradient(
 
 }
 `
+console.log('goal-'+goal)
+console.log('target-'+target)
 
-if(goalpercent ==100)
+
+
+
+if(day==1 && goal < target)
+{
+
+ 
+ 
+  win.classList.remove('hide')
+ 
+  goalstats.textContent =`Goal - ${goal}/${target} km`
+    congrats.textContent = `You completed ${goalpercent}% of your goal`
+}
+else if(goal >= target)
 {
   goalcolor.style = ` background-color: mediumseagreen;`
   box1.classList.add('hide')
   success.classList.remove('hide')
+  win.classList.remove('hide')
+  goalstats.textContent =`Goal - ${goal}/${target} km`
+  congrats.textContent = `Hurray , you completed ${goalpercent}% of your goal💯`
+ 
+
+  
 
 }
+
 
 
 
 userinput.value=''
 
 
-  console.log(day)
-  console.log(currday)
+  
 
-  if(goal > target || goal==target)
-  {
-      win.classList.remove('hide')
-      goalstats.textContent =`Goal - ${goal}/${target} km`
-      congrats.textContent = `Hurray , you completed ${goalpercent}% of your goal💯`
-      
-  }
+ 
+
 
   
-  if(day==1)
-  {
-    win.classList.remove('hide')
-    goalstats.textContent =`Goal - ${goal}/${target} km`
-      congrats.textContent = `You completed ${goalpercent}% of your goal`
-  }
 
 
 
@@ -189,9 +199,15 @@ userinput.value=''
 function reset()
 {
     daytext.textContent = 'Monday';
+    mon.textContent = 0
+    tue.textContent = 0
+    wed.textContent = 0
     thu.textContent = 0
+    fri.textContent = 0
+    sat.textContent = 0
+    sun.textContent = 0
     win.classList.add('hide')
-    day==1;
+    day=1;
     caltext.textContent=0;
     totalamt.textContent=0;
     avgtext.textContent=0;
