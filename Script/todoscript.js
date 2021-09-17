@@ -25,7 +25,7 @@ search.addEventListener('keyup',searchitems)
        if(userinput.value =="")
        {
             userinput.style = ' background-color: lightcoral'
-            userinput.placeholder = 'Please Enter text'
+            userinput.placeholder = '⚠️ Please Enter text'
        }else
        {
 
