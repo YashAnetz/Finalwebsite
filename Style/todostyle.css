@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+*{
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+
+
+
+.maincontainer
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    right: 0;
+    
+    margin: auto;
+    width: 400px;
+    height: fit-content;
+    border: 3px black dotted;
+  
+    background-color: rgb(25, 165, 107);
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+    box-shadow: rgba(0,0,0,0.19) 0px 10px 20px  , rgba(0,0,0,0.19) 0px 6px 6px 6px;
+}
+
+.logo
+{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: skyblue;
+
+}
+
+.logo:hover
+{
+    background-color: teal;
+}
+
+#item
+{
+    position: relative;
+    top: 10px;
+    border: 1px black dotted;
+    width: 350px;
+    color: rgb(14, 13, 13);
+    left: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: rgb(151, 194, 177);
+}
+
+.add
+{
+    position: relative;
+    top: 10px;
+    border: 1px rgb(236, 216, 216) dotted;
+    width: 60px;
+    color: rgb(255, 255, 255);
+    left: 10px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: rgb(42, 126, 112);
+}
+
+.add:hover
+{
+    background-color: cadetblue;
+    transform: scale(1.05);
+    transition: ease-in;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+    top: -70px;
+}
+
+.items_item
+{
+    position: relative;
+    background-color: rgba(87, 69, 69, 0.5);
+    margin: 10px;
+    width: 340px;
+    color: white;
+    font-size: 20px;
+    left: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.delete
+{
+    position: relative;
+    float: left;
+    width: 30px;
+    background-color: lightblue;
+    padding: 1px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.delete:hover
+{
+    color: #000;
+    transform: scale(1.2);
+}
+
+#filter
+{
+    position: relative;
+    top: -16px;
+    border: none;
+    border-bottom: 1px black dotted;
+    width: 140px;
+    color: rgb(14, 13, 13);
+    left: -10px;
+    margin: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: rgb(151, 194, 177);
+}
+
+.hide
+{
+    display: none;
+}
+
+
+.clear
+{
+    position: relative;
+    top: 10px;
+    border: 1px rgb(236, 216, 216) dotted;
+    width: 60px;
+    color: rgb(255, 255, 255);
+    left: 5px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px;
+    background-color: rgb(42, 126, 112);
+}
+
+.clear:hover
+{
+    background-color: brown;
+}
+
+.hig
+{
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:bolder;
+    left: 260px;
+    top: -78px;
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+
+
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.hig h2
+{
+    position: relative;
+    font-size: 15px;
+}
+.hig h3
+{
+    position: relative;
+    font-size: 40px;
+    top: 5px;
+    left: -5px;
+}
+.hig h4
+{
+    position: relative;
+    font-size: 20px;
+    top:-25px
+;
+left: 80px;
+}
+
+.hig button
+{
+    width: 100px;
+    border: 1px black dotted;
+    background: none;
+}
+
+.hig button:hover
+{
+    background-color: blanchedalmond;
+}
