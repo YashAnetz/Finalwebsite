@@ -12,6 +12,8 @@ h2 {
   margin: 2px;
 }
 
+
+
 h1 {
   font-family: "Press Start 2P", cursive;
   font-size: 30px;
@@ -49,6 +51,7 @@ body {
 }
 .gridpage1 {
   display: grid;
+ 
   grid-template-columns: auto auto auto auto;
 }
 
@@ -551,4 +554,10 @@ button:hover {
     width: 80px;
     padding: 10px;
   }
+
+  .mobile
+  {
+    overflow: hidden;
+  }
+
 }
