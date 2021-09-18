@@ -513,9 +513,18 @@ button:hover {
   {
     position:absolute;
     width: 120%;
+overflow:hidden;
+
    
 
   }
+
+.gridpage1
+{
+position:absolute;
+    width: 120%;
+   overflow:hidden;
+}
 
  
   .result {
