@@ -508,25 +508,26 @@ button:hover {
 
 @media screen and (max-width: 900px) {
 
-  body
-  {
-    
-    overflow: hidden;
-    width: 200px;
-  }
 
   .mobile
   {
     position:absolute;
     width: 120%;
+   
+
   }
+
+ 
   .result {
-    width: 120%;
+    width: 100%;
+    overflow: hidden;
   }
 
   .res {
     left: 50px;
   }
+
+
 
   .resulttext {
     position: fixed;
@@ -571,9 +572,5 @@ button:hover {
     padding: 10px;
   }
 
-  .mobile
-  {
-    overflow: hidden;
-  }
 
 }
