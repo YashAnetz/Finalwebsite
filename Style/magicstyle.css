@@ -512,7 +512,7 @@ button:hover {
   .mobile
   {
     position:absolute;
-    width: 100%;
+    width: 90%;
 overflow:hidden;
 
    
@@ -527,7 +527,7 @@ overflow:hidden;
 
  
   .result {
-    width: 120%;
+    width: 100%;
     overflow: hidden;
   }
 
