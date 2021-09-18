@@ -538,12 +538,12 @@ overflow:hidden;
 .griditem {
   background-color: rgb(255, 255, 255);
 
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
   font-family: "Courier New", Courier, monospace;
-  width: 25%;
+  width: 40%;
   font-weight: bold;
-  height: 25%;
+  height: 40%;
   font-size: 20px;
   margin: 5px;
 }
