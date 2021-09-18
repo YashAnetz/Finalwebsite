@@ -541,9 +541,9 @@ overflow:hidden;
   padding: 10px;
   border-radius: 20px;
   font-family: "Courier New", Courier, monospace;
-  width: 60%;
+  width: 100%;
   font-weight: bold;
-  height: 60%;
+  height: 100%;
   font-size: 20px;
   margin: 5px;
 }
