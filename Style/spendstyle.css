@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.maincontainer
+{
+    position:absolute;
+    top: 0;
+    overflow-x: hidden;
+    left: 0px;
+    
+    right: 0;
+  
+
+    margin: auto;
+    width: 400px;
+    height: auto;
+   
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 20px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);}
+
+.logo
+{
+    position: relative;
+    width: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+    padding: 4px;
+    background-color: white;
+    height: 30px;
+    left: 10px;
+    z-index: 1;
+    transition: all 0.1s ease-in;
+    top: 10px;
+}
+
+
+.logo:hover
+{
+    transform: scale(1.05);
+}
+.hig
+{
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:bolder;
+    left: 14px;
+    top: -60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+
+    width: 350px;
+    border-radius: 10px;
+    height: 60px;
+
+    padding: 10px;
+
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.hig h2
+{
+    position: relative;
+    font-size: 15px;
+}
+.hig h3
+{
+    position: relative;
+    font-size: 40px;
+    top: 15px;
+    left: -5px;
+}
+.hig h4
+{
+    position: relative;
+    font-size: 20px;
+    top:-45px;
+    left: 100px;
+;
+left: 80px;
+}
+
+.hig .bu1
+{
+    width: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: none;
+}
+
+.hig .bu2
+{
+    position: relative;
+    width: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    border-radius: 10px;
+    padding: 10px;
+    left: 50px;
+    border: none;
+    background: none;
+}
+.hig button:hover
+{
+    background-color: blanchedalmond;
+}
+
+.available
+{
+    position: relative;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);    top: 10px;
+   
+    text-align: justify;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    top: -51px;
+    padding: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+#info
+{
+    position: relative;
+    width: 355px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+    top: -70px;
+    margin: 10PX;
+    left: 1px;
+
+
+}
+
+.userinputmoney
+{
+    background: none;
+    border: 3px rgb(14, 171, 233) solid;
+    border-radius: 10px;
+    position: relative;
+    font-weight: bolder;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 8px;
+    width: 60px;
+}
+
+
+.userinputtype
+{
+    background: none;
+    border: 3px rgb(14, 171, 233) solid;
+    border-radius: 10px;
+    position: relative;
+    font-weight: bolder;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 8px;
+    width: 170px;
+}
+
+.add{
+    position: relative;
+    padding: 8px;
+    width: 30px;
+    height: 34px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+
+
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(14, 171, 233);
+}
+
+.add:hover
+{
+    background-color: springgreen;
+}
+
+.sub:hover
+{
+    background-color: tomato;
+}
+
+.sub{
+    position: relative;
+    padding: 8px;
+    width: 30px;
+    height: 34px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(14, 171, 233);
+}
+
+.show
+{
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    left: 340px;
+    top: -40px;
+}
+
+.spentper
+{
+    position: relative;
+    width: 355px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+    top: -70px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 10PX;
+    height: 30px;
+    left: 1px;
+}
+.trans
+{
+    position: relative;
+    width: 355px;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+    top: -60px;
+    margin: 10PX;
+    height: auto;
+    left: 1px;
+}
+
+.hide
+{
+    display: none;
+
+}
+
+ul
+{
+    list-style: none;
+}
+
+.items
+{
+    position: relative;
+    
+    margin: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    animation-name: its;
+    animation-duration: 1s;
+    transition: all 1s ease-in;
+    padding: 5px;
+    border-bottom: 1px rgb(184, 184, 184) solid;
+}
+
+@keyframes its{
+    0%
+    {
+        width: 0px;
+    }
+    100%
+    {
+        width: 100%;
+    }
+}
+
+.amt
+{
+    position: relative;
+    float: right;
+    top: -5px;
+    
+  
+ 
+    
+}
+
+.bud
+{
+    position: relative;
+    font-size: 15px;
+    top: -5px;
+    font-weight: bolder;
+}
+
+.amtsi
+{
+    position: relative;
+   
+    font-size: 15px;
+    top: -24px;
+    color: rgb(148, 148, 148);
+    left: 130px;
+}
+
+
+.amtss
+{
+    position: relative;
+   
+    font-size: 15px;
+    top: -24px;
+    color: rgb(148, 148, 148);
+    left: 130px;
+}
+
+
+.line
+{
+    position: relative;
+   
+    font-size: 15px;
+    top: -55px;
+    background-image: linear-gradient(to right , #4facfe 0% , #d3d3d3 10%);
+    left: 0px;
+    height: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+
+    border-radius: 20px;
+
+}
+
+
+.line:hover
+{
+    transform: scale(1.01);
+}
+.stat
+{
+    position: relative;
+    font-size: 15px;
+    top: -42px;
+    left: 300px;
+}
+
+.plus
+{
+    color: green;
+}
+
+.minus
+{
+    color: tomato;
+}
+
+.setgi
+{
+    position: relative;
+    top: -62px;
+    left: 230px;
+    padding: 1px;
+    background: none;
+    border: 1px  skyblue solid;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.setgs
+{
+    position: relative;
+    top: -62px;
+    left: 230px;
+    padding: 1px;
+    background: none;
+    border: 1px  skyblue solid;
+    border-radius: 10px;
+    width: 50px;
+}
+
+.spentperincome
+{
+    position: relative;
+    width: 355px;
+    background-color: rgb(240, 239, 239);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+    top: -60px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 10PX;
+    height: 30px;
+    animation-name: slide;
+    animation-duration: 1s;
+    left: 1px;
+}
+
+
+@keyframes slide
+{
+    0%
+    {
+        width: 0%;
+    }
+
+
+    100%
+    {
+        width: 90%;
+    }
+}
+
+.spentperspend
+{
+    position: relative;
+    width: 355px;
+    background-color: rgb(240, 239, 239);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    border-radius: 10px;
+    top: -190px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 10PX;
+    height: 30px;
+    left: 1px;
+}
+
+.inginc{
+    position: relative;
+    background: none;
+    border: 3px rgb(14, 171, 233) solid;
+    border-radius: 10px;
+    position: relative;
+    font-weight: bolder;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 8px;
+    top: -7px;
+    animation-name: slider;
+    animation-duration: 1s;
+    width: 170px;
+
+}
+
+@keyframes slider
+{
+    0%
+    {
+        width: 0px;
+    }
+
+
+    100%
+    {
+        width: 170px;
+    }
+}
+
+
+
+.ingbuttoninc
+{
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    top: -8px;
+    animation-name: slides;
+    animation-duration: 1s;
+    width: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+
+    border: none;
+    
+    background-color: rgb(91, 181, 255);
+   border-radius: 50%;
+}
+
+@keyframes slides
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        font-size: 0px;
+     
+    }
+
+
+    100%
+    {
+        width: 0px;
+        height: 0px;
+        font-size: 0px;
+        
+    }
+}
+
+
+.ingsep{
+    position: relative;
+    background: none;
+    border: 3px rgb(14, 171, 233) solid;
+    border-radius: 10px;
+    position: relative;
+    font-weight: bolder;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 8px;
+    top: -4px;
+    width: 170px;
+
+}
+
+
+.ingbuttonsep
+{
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    top: -5px;
+    width: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+
+    border: none;
+    
+    background-color: rgb(91, 181, 255);
+   border-radius: 50%;
+}
+
+
+
+.hide
+{
+    display: none;
+}
