@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Style/spendstyle.css" rel='stylesheet'>
+    <title>Spending tracker</title>
+</head>
+<body>
+    <div class="maincontainer">
+        <img src = "/Images/spendlogo.png" class="logo">
+        <h2 class="available">0.00</h2>
+        
+        <form id="info" class="form" >
+            <input class="userinputmoney" placeholder="AMOUNT">
+            <input class="userinputtype" placeholder="ENTER TYPE ">
+        <button class="add">+</button>
+        <button class="sub">-</button>
+        </form>
+        <div class="spentper">
+            <h3 class="bud">Income Goal</h3>
+            <h3 class="amtsi ">$0/$0</h3>
+            <h3 class="stat">0%</h3>
+            <button class="setgi">SET</button>
+
+           
+            <div class="line">-</div>
+
+        </div>
+
+     
+
+        <div class="spentperincome hide">
+          
+            <input class="inginc" placeholder="Set income goal"></input>
+            <button class="ingbuttoninc">SET</button>
+          
+
+        </div>
+
+    
+        <div class="trans">
+        <ul id="item">
+            <li class="items">💥Salary <h2 class="amt plus">+$100</h2> </li>
+            <li class="items">🍟Food  <h2 class="amt minus">-$10</h2></li>
+        </ul>
+        </div>
+
+        <div class = "hig">
+            <h2 >BY YASH</h2>
+            <button class="bu1" onclick="location.href='https://yashnetz.netlify.app/' ">MY SITE</button>
+            <button class="bu2" onclick="location.href='https://yashnetz.netlify.app/Pages/100pro.html' ">MORE JS</button>
+        </div>
+     
+
+
+    </div>
+    <script src="/Script/spendscript.js"></script>
+</body>
+</html>
