@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 .a {
   position: relative;
   top: 30px;
@@ -160,14 +162,18 @@ img {
 .title {
   position: absolute;
   width: 200px;
-  left: 10px;
+  left: -5px;
+  padding: 2px;
   top: 100px;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 20%;
+  background-color: rgba(0, 0, 0, 0.6);
 
   text-transform: uppercase;
   color: white;
+  text-align: center;
+  border-radius: 10px;
   z-index: 1;
   transition: top 0.5s ease;
 }
@@ -256,7 +262,7 @@ img {
 
   .column {
     position: relative;
-    left: 0;
+    left: 18px;
     width: 300px;
     padding: 0;
     height: 200px; /* Should be removed. Only for demonstration */
@@ -299,21 +305,7 @@ img {
     justify-content: center;
   }
 
-  .title {
-    position: absolute;
-    width: 200px;
-    left: 5px;
-    top: 100px;
-    font-weight: 300;
-    margin-left: 1%;
-
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(231, 231, 231);
-    z-index: 1;
-    transition: top 0.5s ease;
-  }
+ 
 
   .container:hover .title {
     top: -20px;
