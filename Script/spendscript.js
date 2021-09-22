@@ -49,7 +49,6 @@ incomeset.addEventListener('click', function(){
 })
 
 
-
 function addtoBalance(e)
 {
     e.preventDefault()
