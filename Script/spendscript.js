@@ -91,9 +91,22 @@ function addtoBalance(e)
 
     console.log(percent2 , percent1)
 
-    percentbar.style = `background-image: linear-gradient(to right , #4facfe ${percent1}% , #d3d3d3 ${percent2}%);`
+    let percent11 = Number(percent1)
+
+    percentbar.style = `background-image: linear-gradient(to right , #4facfe ${percent11}% , #d3d3d3 ${percent2}%);`
     budgeti.textContent = `$${addamt}/$${incomefinalgoal}`
     percent.textContent = `${percent1}%`
+    }
+
+    if(addamt < 0)
+    {
+        mainbalance.style = 'background-image: linear-gradient(to right, #d6625e 0%, #ec296a 100%);'
+    }
+
+    else if(addamt >= 0)
+    {
+
+        mainbalance.style = '  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);   '
     }
 
     typeinput.value=''
@@ -120,7 +133,8 @@ function removefrombalance(e)
 
     let type = `🔴 ${typeinput.value}`
     console.log(type)
-    spendamt = Number(spendamt) +  Number( moneyinput.value)
+   
+    addamt = Number(addamt) - Number(moneyinput.value)
   
     console.log(addamt)
     mainbalance.textContent = `$${addamt}`
@@ -134,16 +148,30 @@ function removefrombalance(e)
     li.appendChild(document.createTextNode(type))
     li.appendChild(addh2)
     list.appendChild(li)
-    budget.textContent = `$${addamt}`
+    
     
     console.log('adda'+addamt)
-    console.log('se'+spendamt)
+    
+ 
   
  
     }
      
-    typeinput.value=''
-    moneyinput.value=''
+    typeinput.value=' '
+    moneyinput.value=' '
+
+
+    if(addamt < 0)
+    {
+        mainbalance.style = 'background-image: linear-gradient(to right, #d6625e 0%, #ec296a 100%);'
+    }
+
+    else if(addamt >= 0)
+    {
+
+        mainbalance.style = '  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);   '
+    }
+
     
 }
 
