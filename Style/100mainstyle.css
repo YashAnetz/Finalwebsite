@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+.main
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+
+}
+
+.header
+{
+   margin: 10px;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(to right, #e471a1 0%, #37f2ff 100%);   
+
+    font-family: 'Lexend Deca', sans-serif;
+    top: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 20px;
+    transition: all 1s ease-in;
+}
+
+@keyframes headeranimation{
+    0% {
+        background-image: linear-gradient(to right, #37f2ff 0%, #e471a1 100%);    top: 10px;
+
+    }
+    100%
+    {
+        background-image: linear-gradient(to right, #e471a1 0%, #37f2ff 100%);  
+    }
+}
+
+.header:hover
+{
+    animation-name: headeranimation;
+    animation-duration: 1s;
+}
+
+.header h1
+{
+    font-weight: bolder;
+    
+}
+
+.b1
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    
+    border-radius: 50%;
+}
+
+.b2
+{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    top: -7px;
+    
+    border-radius: 50%;
+}
+
+.b1:hover
+{
+    transform: scale(1.08);
+}
+.b2:hover
+{
+    transform: scale(1.08);
+}
+
+
+
+img
+{
+    width: inherit;
+    height: inherit;
+}
+
+.img2
+{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 1px
+}
+
+.projectsgrid
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  
+}
+
+.projectitem
+{
+    position: relative;
+    width: 300px;
+    margin: 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 20px;
+
+    transition: all 0.5s ease-in;
+    background-color: rgb(172, 172, 172);
+    height: 200px;
+   border-radius: 20px;
+}
+
+
+
+.projectitem img
+{
+    position: relative;
+  
+
+    background-color: rgb(172, 172, 172);
+    height: 200px;
+   border-radius: 20px;
+   transition: all 0.1s ease; 
+}
+
+
+
+.projectitem h1
+{
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    top: -70px;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    margin: 10px;
+    z-index: 10;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px rgb(202, 202, 202) solid;
+    transition: all 0.5s ease;
+
+
+}
+
+
+.projectitem:hover
+{
+    transform: scale(1.1);
+    
+}
+
+.projectitem:hover h1
+{
+    position: relative;
+    top: -200px;
+    
+}
+
+.overlay
+{
+    position: relative;
+  
+  top:-268px;
+    background-color: rgba(65, 62, 62,0.9);
+    height: 200px;
+   border-radius: 20px;
+   display: none;
+   transition: all 0.1s ease; 
+}
+
+
+.projectitem:hover .overlay
+{
+   display: block;
+    
+}
+
+.visit
+{
+    position: relative;
+    width: 70px;
+    top: -390px;
+    transition: all 0.2s ease-in;
+    left: 69px;
+    height: 70px;
+    display: none;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+    border: none;
+}
+
+.git
+{
+    position: relative;
+    width: 70px;
+    top: -460px;
+    transition: all 0.2s ease-in;
+    display: none;
+    left: 160px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+    border: none;
+}
+
+@keyframes byt
+
+{
+    0%{
+        left: 0%;
+    }
+
+    100%
+    {
+        left: 69px;
+    }
+
+}
+@keyframes byt1
+
+{
+    0%{
+        left: 70%;
+    }
+
+    100%
+    {
+        left: 160px;
+    }
+
+}
+
+
+.visit:hover
+{
+    transform: scale(1.1);
+}
+.git:hover
+{
+    transform: scale(1.1);
+}
+
+.projectitem:hover .visit
+{
+   display: block;
+   animation-name: byt;
+   animation-duration: 0.5s;
+    
+}
+
+.projectitem:hover .git
+{
+   display: block;
+   animation-name: byt1;
+   animation-duration: 0.5s;
+    
+}
+
+.git .gitimg
+{
+    position: relative;
+    width: inherit;
+    border-radius: 50%;
+    height: inherit;
+}
+
+
+.visit .gitimg
+{
+    position: relative;
+    width: inherit;
+    border-radius: 50%;
+    height: inherit;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .main
+{
+    position: relative;
+   
+  
+   
+background-size:cover;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+
+}
+    .projectsgrid
+    {
+        display: grid;
+        height: auto;
+        grid-template-columns: auto ;
+      
+    }
+    
+    .projectitem
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        
+        background-color: rgb(141, 139, 139);
+        height: 200px;
+       border-radius: 20px;
+    }
+    .projectitem img
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+      
+        background-color: rgb(141, 139, 139);
+        height: 200px;
+       border-radius: 20px;
+    }
+
+      
+  
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .main
+{
+    position: relative;
+   
+  
+   
+background-size:cover;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+
+}
+    .projectsgrid
+    {
+        display: grid;
+        height: auto;
+        grid-template-columns: auto auto ;
+      
+    }
+    
+    .projectitem
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        
+        background-color: rgb(141, 139, 139);
+        height: 200px;
+       border-radius: 20px;
+    }
+    .projectitem img
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+      
+        background-color: rgb(141, 139, 139);
+        height: 200px;
+       border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .main
+{
+    position: relative;
+   
+  
+   
+background-size:cover;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
+
+}
+    .projectsgrid
+    {
+        display: grid;
+        height: auto;
+        grid-template-columns: auto  ;
+      
+    }
+    
+    .projectitem
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        
+        background-color: rgb(141, 139, 139);
+        height: 200px;
+       border-radius: 20px;
+    }
+    .projectitem img
+    {
+        position: relative;
+        width: 300px;
+        margin: auto;
+      
+        background-color: rgb(141, 139, 139);
+        height: 200px;
+       border-radius: 20px;
+    }
+}
+
+
