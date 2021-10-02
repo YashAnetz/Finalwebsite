@@ -27,6 +27,7 @@ h4
   font-family: 'Lexend Deca', sans-serif;
   position: relative;
   top: 25rem;
+  width: 180px;
   left: 25%;
   font-weight: bolder;
   font-size: 16px;
@@ -172,7 +173,7 @@ grid-template-columns: auto;
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 900px) {
 
 
  #form
@@ -232,7 +233,7 @@ grid-template-columns: auto;
 
  .blog
  {
-  width: 90%;
+  width: 80%;
  }
 
 
@@ -255,9 +256,11 @@ grid-template-columns: auto;
 {
   font-family: 'Lexend Deca', sans-serif;
   position: relative;
-  top: 30rem;
+  top: 32rem;
   left: 25%;
+  width: 180px;
   font-weight: bolder;
+  z-index: 30;
   font-size: 16px;
 
 }
