@@ -184,7 +184,7 @@ function additems(titlefinal1,contentfinal1,datefinal1,authorfinal1)
   authormain.appendChild(document.createTextNode(`By - ${authorfinal1}`))
   blognew.appendChild(authormain)
   
-  allblogs.prepend(blognew)
+  allblogs.append(blognew)
 
 
 
