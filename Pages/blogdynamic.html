@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--Firebase Libraries-->
+<script type="module" src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+
+<script type="module" src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="/Style/blogstyle.css" rel="stylesheet">
+ <title>Document</title>
+</head>
+<body>
+   <img src="/Images/bloglogo.png">
+   <div class="signature"><h2>BY YASH</h2>
+   <button>My site</button>
+   <button>All js</button>
+</div>
+   
+   <form id="form" class="form" action="#"> 
+
+     
+
+      <h1>ADD BLOG</h1>
+         
+         <input class="title" placeholder="Title (Max char 30)" maxlength="30">
+         <textarea rows="4" cols="50" class="content" ows="4" cols="50" placeholder="Write your mini blog here (max char 120)" maxlength="120"></textarea> 
+        
+            <input class="date" placeholder="date" type="date">
+            <input class="author" placeholder="Author" maxlength="10">
+            <button class="submit" >Submit</button> 
+          
+   </form>
+
+   <div class="allblogs">
+
+
+
+   
+</div>
+
+
+   <script type="module"  src="/Script/blogscript.js"></script>
+  
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script>
+
+</html>
