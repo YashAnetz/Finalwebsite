@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap');
+
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+.bg 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    right: 0;
+
+    left: 0;
+    margin: auto;
+   
+    height: 100%;
+    width: 100%;
+
+}
+
+.taskbar
+{
+    
+    position: absolute;
+    top: 94.7%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+   
+    height: 49px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+    z-index: 2;
+    background-color: rgba(211, 211, 211, 0.9);
+}
+
+
+.winlogowhite
+{
+    position: relative;
+   width: 30px;
+   height: 30px;
+  
+   left: 40%;
+   padding: 8px;
+   top: 3px;
+   background-color: rgba(255, 255, 255, 0.6);
+   border-radius: 5px;
+    z-index: 1;
+    
+}
+
+
+
+
+.winlogowhite:hover 
+{
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.searchlogo
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    left: 40%;
+    top: 3px;
+    padding: 8px;
+    z-index: 10;
+  
+    border-radius: 5px;
+}
+
+.lastbar
+{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(170, 170, 170, 0.12);
+    left: 64%;
+    top:-5px;
+    padding: 8px;
+    z-index: 10;
+  
+    border-radius: 5px;
+}
+
+.lastbaricon
+{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0.12);
+    left: 64%;
+    top:-5px;
+    padding: 8px;
+    z-index: 10;
+  
+    border-radius: 5px;
+}
+
+.notify
+{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.12);
+    left: 69%;
+    top:-5px;
+    
+    z-index: 10;
+  
+    border-radius: 5px;
+}
+
+
+.notify:hover
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.time
+{
+    position: absolute;
+    top: 9px;
+    left: 93%;
+z-index: 1;
+    right: 0;
+    font-size: 14px;
+    font-weight: 100;
+ 
+    margin: auto;
+    height: 100%;
+    width: 100%; 
+}
+
+.time1
+{
+    position: absolute;
+    top: 25px;
+    left: 93.2%;
+z-index: 1;
+    right: 0;
+    font-size: 14px;
+    font-weight: 300;
+ 
+    margin: auto;
+    height: 100%;
+    width: 100%; 
+}
+
+.lastbar:hover
+{
+    background-color: rgba(15, 98, 207, 0.25);
+}
+.lastbaricon:hover
+{
+    background-color: rgba(19, 19, 19, 0.25);
+}
+
+
+
+.searchlogo:hover
+{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.searchlogo:hover .winlogowhite
+{
+    background:none;
+}
+
+
+.desktopicon
+{
+
+position: relative;
+top: 2rem;
+left: -55rem;
+z-index: 1;
+
+right: 0;
+
+margin: auto;
+margin-bottom: 10px;
+height: 100px;
+width: 80px;
+
+}
+
+.desktopicon img
+{
+    position: relative;
+    left: 15px;
+    width: 50px;
+
+    height: 50px;
+}
+
+.desktopicon h3
+{
+
+    text-align: center;
+    font-weight: 1;
+    width: 50px;
+    font-size: 15px;
+    position: relative;
+    left: 15px;
+    text-shadow:01px 2px black;
+    color: white;
+    height: 50px;
+}
+
+.desktopicon:hover
+{
+
+background-color: rgba(15, 98, 207, 0.25);
+border: 1px rgb(15, 98, 207) solid ;
+
+}
+
+.desktopicon1
+{
+
+position: relative;
+top: -46.5rem;
+left: -48rem;
+z-index: 1;
+right: 0;
+
+margin: auto;
+margin-bottom: 10px;
+height: 100px;
+width: 80px;
+
+}
+
+
+.desktopicon1 img
+{
+    position: relative;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.desktopicon1 h3
+{
+
+    text-align: center;
+    font-weight: 1;
+    width: 50px;
+    font-size: 15px;
+    position: relative;
+    left: 15px;
+    text-shadow:01px 2px black;
+    color: white;
+    height: 50px;
+}
+
+.desktopicon1:hover
+{
+
+background-color: rgba(15, 98, 207, 0.25);
+border: 1px rgb(15, 98, 207) solid ;
+
+}
+
+
+.globalmodal
+{
+    position: absolute;
+    top: 15rem;
+   bottom: 0;
+   border-radius: 8px;
+
+    z-index: 1;
+    right: 0;
+    animation-name:forGlobalmodal ;
+    animation-duration: 1s;
+    transition: all 2s ease-in;
+    left: 18rem;
+    margin: auto;
+   
+    height: auto;   
+
+    width:auto;
+}
+
+
+@keyframes forGlobalmodal
+{
+    0%
+    {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        top: 50rem;
+    }
+    100%
+    {
+        top: 15rem;
+        height: auto;   
+
+        width:auto;
+    }
+}
+
+.globalmodal button
+{
+    position: relative;
+  
+    top: -35.9rem;
+}
+
+.min
+{
+    position: relative;
+    left: -120px;
+    border: none;
+
+    background: none;
+    width: 40px;
+   
+    height: 30px;
+}
+
+.max
+{
+    
+    border: none;
+    position: relative;
+    left: -124px;
+    background: none;
+    width: 40px;
+    height: 30px;
+}
+
+.clos
+{
+    border: none;
+    border-top-right-radius: 8px;
+    position: relative;
+    left: -131px;
+background: none;
+    width: 40px;
+    height: 30px;
+}
+
+.min:hover
+{
+    background-color: rgba(173, 173, 173, 0.8);
+}
+.max:hover
+{
+    background-color: rgba(173, 173, 173, 0.8);
+}
+
+.clos:hover
+{
+    
+
+    background-color: rgba(214, 0, 0, 0.8);
+
+}
+
+.start 
+{
+    position: absolute;
+    top: 10rem;
+   bottom: 0;
+
+    z-index: 1;
+    right: 0;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    animation-name: startAnimation;
+    animation-duration: 0.5s;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+    left: 0rem;
+    margin: auto;
+   
+    height:70%;
+    width:auto;
+}
+
+@keyframes startAnimation
+{
+    0%{
+        top:150rem;
+    }
+    100%
+    {
+        top:10rem
+    }
+    0%
+    {
+        top:150rem;
+    }
+    
+}
+
+.chromewindow
+{
+position: relative;
+top: -570px;
+border-radius: 8px;
+width: 62%;
+height: auto;
+}
+
+.thispcwindow
+{
+position: relative;
+top: -570px;
+width: 62%;
+border-radius: 8px;
+height: auto;
+}
+
+.vswindow
+{
+position: relative;
+top: -570px;
+width: 62%;
+border-radius: 8px;
+height: auto;
+}
+.photoswindow
+{
+position: relative;
+top: -570px;
+width: 62%;
+border-radius: 8px;
+height: auto;
+}
+
+.mailwindow
+{
+position: relative;
+top: -580px;
+width: 62.5%;
+border-radius: 8px;
+height: auto;
+}
+
+.storewindow
+{
+position: relative;
+top: -580px;
+width: 62.5%;
+border-radius: 8px;
+height: 75%;
+}
+
+.edgewindow
+{
+position: relative;
+top: -580px;
+width: 62.5%;
+border-radius: 8px;
+height: 75%;
+}
+
+.gitwindow
+{
+position: relative;
+top: -580px;
+width: 62.5%;
+border-radius: 8px;
+height: 75%;
+}
+
+
+.windowwrapper
+{
+ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.8) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    border-radius: 8px;
+
+}
+
+.welcome
+{
+    position: relative;
+    top: -360px;
+    left: 46rem;
+    animation-name: forwelcome;
+    animation-duration: 0.5s;
+    transition: all 0.5s ease-in;
+
+    z-index: 5;
+    right: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.8) 0px -12px 30px, rgba(0, 0, 0, 0.8) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+
+    font-family: 'Lexend Deca', sans-serif;
+
+    margin: auto;
+    background-color: rgba(190, 190, 190, 0.8);
+    border-radius: 8px;
+   
+    height: 350px;
+    padding: 10px;
+    width: 400px;
+}
+.search
+{
+    position: relative;
+    top: -480px;
+    left: -5rem;
+    animation-name: forwelcome;
+    animation-duration: 0.5s;
+    transition: all 0.5s ease-in;
+
+    z-index: 5;
+    right: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.8) 0px -12px 30px, rgba(0, 0, 0, 0.8) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+
+    font-family: 'Lexend Deca', sans-serif;
+
+    margin: auto;
+    background-color: rgba(190, 190, 190, 0.8);
+    border-radius: 8px;
+   
+    height: 100px;
+    padding: 10px;
+    width: 400px;
+}
+
+.search h3
+{
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.search h3:hover
+{
+    background-color: rgba(110, 110, 110, 0.8); ;
+
+}
+
+
+.welcome h1{
+    position: relative;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 54px 55px, rgba(87, 62, 62, 0.2) 0px -12px 30px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    color: rgb(0, 0, 0);
+    background-color: rgba(89, 95, 102, 0.25);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.welcome h2
+{
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.welcome button
+{
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 10px;
+    background: none;
+    border:none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.welcome img{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 54px 55px, rgba(87, 62, 62, 0.2) 0px -12px 30px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+    left: 30%;
+    margin: 10px;
+    width: 60px;
+    border-radius: 50%;
+}
+.welcome button:hover
+{
+    background-color: blanchedalmond;
+}
+
+.welcome img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes forwelcome
+{
+0%
+{
+    top: 0px;
+}
+100%
+{
+    top: -360px;
+}
+}
+
+.hide
+{
+ display: none;
+}
